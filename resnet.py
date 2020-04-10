@@ -118,9 +118,7 @@ class CustomBlock(nn.Module):
 
         out += identity
         out = self.relu(out)
-
-        out = self.dropout(out)
-
+        # out = self.dropout(out)
         return out
 
 
