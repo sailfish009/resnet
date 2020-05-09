@@ -376,7 +376,7 @@ def resnet50c(pretrained=False, progress=True, **kwargs):
         pretrained (bool): If True, returns a model pre-trained on ImageNet
         progress (bool): If True, displays a progress bar of the download to stderr
     """
-    return custom_resnet('resnet50c', CustomBlock, [3, 4, 6, 3], pretrained, progress,
+    return custom_resnet('resnet50', CustomBlock, [3, 4, 6, 3], 12, pretrained, progress,
                    **kwargs)
 
 # custom Bottleneck
