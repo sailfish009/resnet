@@ -1,6 +1,5 @@
-import torch
 import torch.nn as nn
-from resnet import ResNet
+from resnet import ResNet, conv1x1, conv3x3
 
 # custom resnet
 def custom_resnet(arch, block, layers, num_classes, pretrained, progress, **kwargs):
